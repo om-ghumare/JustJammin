@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main_wrapper {
+    background: url('https://www.pixelstalk.net/wp-content/uploads/2016/11/Black-guitar-deadpool-logo-phone.jpg') no-repeat center center/cover;
+
+    height: 100vh;
+
+}
+
+.guitar_head {
+    font-size: 60px;
+    font-family: 'Rock Salt', cursive;
+    color: rgb(161, 149, 161);
+}
+
+
+.notes {
+    display: flex;
+
+    position: relative;
+    top: -342px;
+    right: 650px;
+}
+
+.note {
+    display: flex;
+    color: oldlace;
+    font-size: 22px;
+    padding: 1px;
+    font-family: 'Baloo Bhai', cursive;
+}
