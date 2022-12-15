@@ -1,17 +1,28 @@
 import '../index.css'
 import '../assets/stylesheets/Navbar.css'
+
+
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className='navbar_main'>
-      {/* <h2>Nav</h2> */}
-      <div className="head"><img src={require('../assets/images/logo.png')} alt="logo"/>
-           <div className='title' href=""> Just Jammin'</div></div>
+   
+      <div className="nav_head">
+      <Link className='nav_logo' to="home"><img src={require('../assets/images/logo.png')} alt="logo"/>
+           <div className='nav_title' href=""> Just Jammin'</div>
+           
+           </Link></div>
         <div>
             <ul class="nav">
-                <li className="item"><a href="#about">Drums</a></li>
-                <li className="item"><a href="#tools">Piano </a></li>
-                <li className="item"><a href="#forum">Guitar</a></li>
-                <li className="item"><a href="#connect">Music Box</a></li>
+            
+                <li className="item"><Link to="home">Home</Link></li>
+                <li className="item"><Link to="drums">Drums</Link></li>
+                <li className="item"><Link to="piano">Piano</Link></li>
+                <li className="item"><Link to="guitar">Guitar</Link></li>
+                <li className="item"><Link to="musicbox">Musicbox</Link></li>
+
+
+
             </ul>
         </div>
     </div>

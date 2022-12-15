@@ -5,14 +5,14 @@ body {
     position: relative;
 }
 
-.main-wrapper {
+.drums_main-wrapper {
     margin: 30px auto 0;
-    width: 1080px;
+    
     text-align: center;
-    height: 100vh;
+    
 }
 
-.main-title {
+.drums_main-title {
     font-family: 'Rock Salt', cursive;
     text-align: center;
     font-size: 3.2em;
@@ -24,7 +24,7 @@ body {
 .drum-kit-wrapper {
     position: relative;
     width: 600px;
-    margin: -100px -20px 0;
+    margin: -75px 100px 0;
 }
 
 .drum-kit {
@@ -40,7 +40,7 @@ body {
     height: 80px;
     width: 100px;
     position: relative;
-
+    margin-left: 100px;
     top: -265px;
     left: 525px;
 
@@ -63,8 +63,9 @@ body {
     transition: all ease-in-out .042s;
 }
 
-.key {
-    display: inline-block;
+.drum_key {
+    display: flex;
+    justify-content: center;
     transition: all ease-in-out .042s;
     position: absolute;
     background: #eaeaea;
@@ -79,59 +80,60 @@ body {
     z-index: 2;
 }
 
-.key.kick {
+.drum_key.kick {
     top: 355px;
     right: 250px;
 }
 
-.key.kick2 {
+.drum_key.kick2 {
     top: 355px;
     right: 308px;
 }
 
-.key.snare {
+.drum_key.snare {
     right: 145px;
     top: 280px;
 }
 
-.key.tom-high {
+.drum_key.tom-high {
     right: 227px;
     top: 240px;
 }
 
-.key.tom-mid {
+.drum_key.tom-mid {
     left: 222px;
     top: 220px;
 }
 
-.key.tom-low {
+.drum_key.tom-low {
     top: 320px;
     left: 133px;
 }
 
-.key.crash {
+.drum_key.crash {
     top: 80px;
     left: 75px;
 }
 
-.key.ride {
+.drum_key.ride {
     left: 165px;
     top: 87px;
 }
 
-.key.hihat-open {
+.drum_key.hihat-open {
     right: 165px;
     top: 144px;
 }
 
-.key.hihat-close {
+.drum_key.hihat-close {
     right: 60px;
     top: 150px;
 }
 
-.key.cowbell {
+.drum_key.cowbell {
     top: 291px;
     left: 565px;
+    margin-left: -20px;
 
 }
 
@@ -142,19 +144,24 @@ body {
 .key-map-wrapper {
     position: absolute;
     right: 0;
-    top: 109px;
+    top: -100px;
     height: 100vh;
     background: #111;
     width: 250px;
-    z-index: -5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .key-map-wrapper>h2 {
     color: rgb(238, 48, 48);
-    font-family: 'Handlee', cursive;
-    margin-bottom: 35px;
-    border-bottom: 1px solid rgb(238, 48, 48);
-    padding-bottom: 20px;
+  font-family: 'Handlee', cursive;
+  margin-bottom: 35px;
+  border-bottom: 1px solid rgb(238, 48, 48);
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 .key-map-list {

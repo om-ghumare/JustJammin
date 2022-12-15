@@ -68,7 +68,7 @@ const Drums = () => {
 		keyElement.classList.add(playingClass);
 
 
-        const drumKeys = Array.from(document.querySelectorAll('.key'));
+        const drumKeys = Array.from(document.querySelectorAll('.drum_key'));
 
 	drumKeys.forEach(key => {
 		key.addEventListener('transitionend', removeKeyTransition);
@@ -83,8 +83,8 @@ const Drums = () => {
     <div className="Drums">
         
   <main>
-    <h1 className="main-title"> Drum Kit</h1>
-    <section className="main-wrapper">
+    <h1 className="drums_main-title"> Drum Kit</h1>
+    <section className="drums_main-wrapper">
       <div className="key-map-wrapper">
         <h2>Key Mapping</h2>
         <ul className="key-map-list">
@@ -146,37 +146,37 @@ const Drums = () => {
           alt="Hi Hat cymbal"
         />
         <img className="drum-kit" src="/drums/drum-kit.png" alt="Drum Kit" />
-        <div data-key={74} className="key snare">
+        <div data-key={74} className="drum_key snare">
           <kbd>J</kbd>
         </div>
-        <div data-key={66} className="key kick">
+        <div data-key={66} className="drum_key kick">
           <kbd>B</kbd>
         </div>
-        <div data-key={86} className="key kick2">
+        <div data-key={86} className="drum_key kick2">
           <kbd>V</kbd>
         </div>
-        <div data-key={72} className="key tom-high">
+        <div data-key={72} className="drum_key tom-high">
           <kbd>H</kbd>
         </div>
-        <div data-key={71} className="key tom-mid">
+        <div data-key={71} className="drum_key tom-mid">
           <kbd>G</kbd>
         </div>
-        <div data-key={70} className="key tom-low">
+        <div data-key={70} className="drum_key tom-low">
           <kbd>F</kbd>
         </div>
-        <div data-key={69} className="key crash">
+        <div data-key={69} className="drum_key crash">
           <kbd>E</kbd>
         </div>
-        <div data-key={82} className="key ride">
+        <div data-key={82} className="drum_key ride">
           <kbd>R</kbd>
         </div>
-        <div data-key={73} className="key hihat-open">
+        <div data-key={73} className="drum_key hihat-open">
           <kbd>I</kbd>
         </div>
-        <div data-key={75} className="key hihat-close">
+        <div data-key={75} className="drum_key hihat-close">
           <kbd>K</kbd>
         </div>
-        <div data-key={77} className="key cowbell">
+        <div data-key={77} className="drum_key cowbell">
           <kbd>M</kbd>
         </div>
       </div>

@@ -1,35 +1,66 @@
 import "../assets/stylesheets/Guitar.css";
+import { useEffect } from "react";
 
 const Guitar = () => {
+
+
+    useEffect(() => {
+        document.addEventListener('keydown',play_sound,true);
+      
+      }, [])
+      const play_sound = (e) => {
+   
+        let keyCode=e.keyCode;
+        let keyElement = document.querySelector(`div[data-key="${keyCode}"]`);
+      
+		if(!keyElement) return;
+
+		const audioElement = document.querySelector(`audio[data-key="${keyCode}"]`);
+        
+      
+		audioElement.currentTime = 0;
+		audioElement.play();
+      }
   return (
-    <div className=" main_wrapper">
+    <div className=" guitar_main_wrapper">
         <p className="guitar_head">Guitar</p>
 
-  <div className="notes">
+<div className="guitar_wrap">
+  <div className="guitar_notes">
     <ul>
-      <li className="note">D=E low=&gt;</li>
-      <li className="note">G=B=&gt;</li>
-      <li className="note">F=G=&gt;</li>
-      <li className="note">H=D=&gt;</li>
-      <li className="note">J=A=&gt;</li>
-      <li className="note">K=E high=&gt;</li>
+      <li className="guitar_note">D &rarr; E low</li>
+      <li className="guitar_note">G &rarr; B</li>
+      <li className="guitar_note">F &rarr; G</li>
+      <li className="guitar_note">H &rarr; D </li>
+      <li className="guitar_note">J &rarr; A </li>
+      <li className="guitar_note">K &rarr; E high </li>
     </ul>
   </div>
-  <div className="guitar">
-    <div data-note="El" className="key string" />
-    <div data-note="B" className="key string" />
-    <div data-note="G" className="key string" />
-    <div data-note="D" className="key string" />
-    <div data-note="A" className="key string" />
-    <div data-note="Eh" className="key string" />
-  </div>
-  <audio id="El" src="Elow.mp3" />
-  <audio id="B" src="B.mp3" />
-  <audio id="G" src="G.mp3" />
-  <audio id="D" src="D.mp3" />
-  <audio id="A" src="A.mp3" />
-  <audio id="Eh" src="Ehigh.mp3" />
+
+  <div className="guitar_main"></div>
     </div>
+
+  <audio data-key={68} src="/guitar/Elow.mp3" />
+  <audio data-key={71} src="/guitar/B.mp3" />
+  <audio data-key={70} src="/guitar/G.mp3" />
+  <audio data-key={72} src="/guitar/D.mp3" />
+  <audio data-key={74} src="/guitar/A.mp3" />
+  <audio data-key={75} src="/guitar/Ehigh.mp3" />
+
+
+
+
+  <div data-key={68}  />
+  <div data-key={71}  />
+  <div data-key={70} />
+  <div data-key={72} />
+  <div data-key={74}  />
+  <div data-key={75}  />
+    </div>
+    
+
+
+
   )
 }
 

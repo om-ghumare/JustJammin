@@ -6,32 +6,52 @@
 }
 
 
-.main_wrapper {
+.guitar_main_wrapper {
     background: url('https://www.pixelstalk.net/wp-content/uploads/2016/11/Black-guitar-deadpool-logo-phone.jpg') no-repeat center center/cover;
 
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+.guitar_wrap{
+    display: flex;
+    margin-top: 2em;
+   
+    align-items: center;
+   
+}
+.guitar_main
+{
+  
+  height: 350px;
+  width: 400px;
+  background:  url(/public/guitar/guitar.png)  no-repeat center center/cover;
+  position: relative;
+
+  box-shadow: 4px 5px 20px mistyrose;
 
 }
 
 .guitar_head {
+    align-self: center;
     font-size: 60px;
     font-family: 'Rock Salt', cursive;
     color: rgb(161, 149, 161);
 }
 
 
-.notes {
+.guitar_notes {
     display: flex;
+    margin: 8em 2em;
 
-    position: relative;
-    top: -342px;
-    right: 650px;
 }
 
-.note {
+.guitar_note {
     display: flex;
     color: oldlace;
     font-size: 22px;
     padding: 1px;
-    font-family: 'Baloo Bhai', cursive;
+   
 }

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.musicbox_main_wrapper {
+    background: url("/public/musicbox/bg.jpg") no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    font-family: "Rock Salt", cursive;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.musicbox_h1 {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 55px;
+    position: relative;
+    color: white;
+}
+
+.musicbox_p {
+    font-size: 1.7em;
+    position: relative;
+    color: black;
+    margin-bottom: 3em;
+}
+
+.pads {
+    background: lightblue;
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+.pads:hover {
+    cursor: pointer;
+    position: relative;
+}
+
+.pads>div {
+    width: 100px;
+    flex: 1;
+    position: relative;
+}
+
+.pad1 {
+    background: #60d394;
+    position: relative;
+}
+
+.pad2 {
+    background: #d36060;
+    position: relative;
+}
+
+.pad3 {
+    background: #c060d3;
+    position: relative;
+}
+
+.pad4 {
+    background: #d3d160;
+    position: relative;
+}
+
+.pad5 {
+    background: #606bd3;
+    position: relative;
+}
+
+.pad6 {
+    background: #60c2d3;
+    position: relative;
+}
+
+.visual>div {
+    position: absolute;
+    left: 35px;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.img img{
+    height: 90px;
+    width: auto;
+   
+}
+
+@keyframes appear{
+    0%{
+        transform: scale(2);
+    }
+    100%{
+     
+  
+        transform: translateY(-200px) scale(0.4);
+        opacity: 0.5;
+    }
+        
+}
+@keyframes dissapear{
+    0%{
+       
+    }
+    100%{
+        transform: translateY(200px) scale(2.5);
+
+        opacity: 1;
+     
+    }
+}
