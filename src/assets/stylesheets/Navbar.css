@@ -42,6 +42,36 @@
   font-family: "Rock Salt", cursive;
 }
 
+.navi{
+  display: flex;
+  align-items: center;
+}
+.button {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-color: black;
+  border-radius: 3em;
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.button:hover {
+  background: rgb(48, 48, 48);
+}
+
+.downloadButton {
+  margin-right: auto;
+}
+svg{
+  height: 24px;
+  width: auto;
+}
 .nav {
   display: flex;
 }
@@ -69,3 +99,12 @@
   font-family: "Baloo Bhai", cursive;
 }
 
+.nav li a:focus{
+  text-decoration: none;
+  color: rgb(83, 78, 78);
+  padding: 0.1em;
+  margin: 0.1em;
+  border-radius: 2em;
+  background-color: whitesmoke;
+  font-family: "Baloo Bhai", cursive;
+}

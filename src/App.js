@@ -9,29 +9,22 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate,
 } from "react-router-dom";
 function App() {
   return (
     <div className="App">
       <Router>
-      <Navbar/>
-      <Routes>
-      
-        <Route path="/home" element={<Home />} /> 
-        <Route path="/drums" element={<Drums />} />
-        <Route path="/piano" element={<Piano />} />
-        <Route path="/guitar" element={<Guitar />} />
-        <Route path="/musicbox" element={<Musicbox />} />
-        
-     
+        <Navbar />
+        <Routes>
+        <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/drums" element={<Drums />} />
+          <Route path="/piano" element={<Piano />} />
+          <Route path="/guitar" element={<Guitar />} />
+          <Route path="/musicbox" element={<Musicbox />} />
         </Routes>
-     
-     {/* <Home/> */}
-     {/* <Drums/> */}
-     {/* <Piano/> */}
-     {/* <Guitar/> */}
-     {/* <Musicbox/> */}
-     </Router>
+      </Router>
     </div>
   );
 }
