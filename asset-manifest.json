@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JustJammin/static/css/main.53c6a457.css",
-    "main.js": "/JustJammin/static/js/main.b7b50fb5.js",
+    "main.css": "/JustJammin/static/css/main.65e84124.css",
+    "main.js": "/JustJammin/static/js/main.160983ec.js",
     "static/js/787.0c3f432a.chunk.js": "/JustJammin/static/js/787.0c3f432a.chunk.js",
     "static/media/bg.jpg": "/JustJammin/static/media/bg.c81b9b2b0cfde0d2f173.jpg",
     "static/media/logo.png": "/JustJammin/static/media/logo.e3a08a3c3da7b680bf78.png",
@@ -9,12 +9,12 @@
     "static/media/guitar.png": "/JustJammin/static/media/guitar.6edf013d8591fe3bd0c4.png",
     "static/media/th-removebg-preview.png": "/JustJammin/static/media/th-removebg-preview.60773a052679efc6dc3f.png",
     "index.html": "/JustJammin/index.html",
-    "main.53c6a457.css.map": "/JustJammin/static/css/main.53c6a457.css.map",
-    "main.b7b50fb5.js.map": "/JustJammin/static/js/main.b7b50fb5.js.map",
+    "main.65e84124.css.map": "/JustJammin/static/css/main.65e84124.css.map",
+    "main.160983ec.js.map": "/JustJammin/static/js/main.160983ec.js.map",
     "787.0c3f432a.chunk.js.map": "/JustJammin/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53c6a457.css",
-    "static/js/main.b7b50fb5.js"
+    "static/css/main.65e84124.css",
+    "static/js/main.160983ec.js"
   ]
 }
