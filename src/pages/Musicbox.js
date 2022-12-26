@@ -6,7 +6,7 @@ const Musicbox = () => {
     
     const createanimation = index => {
         let object = document.querySelector(`img[id="${index+1}"]`)
-      
+      console.log(object)
         object.style.animation = 'appear 1s ease-out'
         setTimeout(() => {
             

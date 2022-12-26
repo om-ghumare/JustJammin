@@ -100,7 +100,7 @@
 
 .img img{
     height: 90px;
-    width: auto;
+    width: min-content;
    
 }
 
