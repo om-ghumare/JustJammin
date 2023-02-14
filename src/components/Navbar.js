@@ -35,7 +35,7 @@ const Navbar = () => {
             <BsFillStopCircleFill fill="#f34040" size={23} />
           </button>
         )}
-        <ul class="nav">
+        <ul className="nav">
           <li className="item">
             <Link to="home">Home</Link>
           </li>

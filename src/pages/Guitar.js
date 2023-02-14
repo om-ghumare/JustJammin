@@ -29,8 +29,8 @@ const Guitar = () => {
   <div className="guitar_notes">
     <ul>
       <li className="guitar_note">D &rarr; E low</li>
-      <li className="guitar_note">G &rarr; B</li>
-      <li className="guitar_note">F &rarr; G</li>
+      <li className="guitar_note">F &rarr; B</li>
+      <li className="guitar_note">G &rarr; G</li>
       <li className="guitar_note">H &rarr; D </li>
       <li className="guitar_note">J &rarr; A </li>
       <li className="guitar_note">K &rarr; E high </li>
@@ -40,12 +40,12 @@ const Guitar = () => {
   <div className="guitar_main"></div>
     </div>
 
-  <audio data-key={68} src="/guitar/Elow.mp3" />
-  <audio data-key={71} src="/guitar/B.mp3" />
-  <audio data-key={70} src="/guitar/G.mp3" />
-  <audio data-key={72} src="/guitar/D.mp3" />
-  <audio data-key={74} src="/guitar/A.mp3" />
-  <audio data-key={75} src="/guitar/Ehigh.mp3" />
+  <audio data-key={68} src={`${process.env.PUBLIC_URL}/guitar/Elow.mp3`} />
+  <audio data-key={70} src={`${process.env.PUBLIC_URL}/guitar/B.mp3`} />
+  <audio data-key={71} src={`${process.env.PUBLIC_URL}/guitar/G.mp3`} />
+  <audio data-key={72} src={`${process.env.PUBLIC_URL}/guitar/D.mp3`} />
+  <audio data-key={74} src={`${process.env.PUBLIC_URL}/guitar/A.mp3`} />
+  <audio data-key={75} src={`${process.env.PUBLIC_URL}/guitar/Ehigh.mp3`} />
 
 
 

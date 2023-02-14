@@ -136,16 +136,16 @@ const Drums = () => {
         <img
           id="crash-ride"
           className="crash-cymbal"
-          src="/drums/crash.png"
+          src={`${process.env.PUBLIC_URL}/drums/crash.png`}
           alt="Crash cymbal"
         />
         <img
           id="hihat-top"
           className="hihat-top-cymbal"
-          src="/drums/hihat-top.png"
+          src={`${process.env.PUBLIC_URL}/drums/hihat-top.png`}
           alt="Hi Hat cymbal"
         />
-        <img className="drum-kit" src="/drums/drum-kit.png" alt="Drum Kit" />
+        <img className="drum-kit" src={`${process.env.PUBLIC_URL}/drums/drum-kit.png`} alt="Drum Kit" />
         <div data-key={74} className="drum_key snare">
           <kbd>J</kbd>
         </div>
@@ -183,17 +183,17 @@ const Drums = () => {
       <div className="cowbell"></div>
     </section>
   </main>
-  <audio data-key={74} src="/drums/snare.wav" />
-  <audio data-key={66} src="/drums/kick.wav" />
-  <audio data-key={86} src="/drums/kick.wav" />
-  <audio data-key={72} src="/drums/tom-high.wav" />
-  <audio data-key={71} src="/drums/tom-mid.wav" />
-  <audio data-key={70} src="/drums/tom-low.wav" />
-  <audio data-key={69} src="/drums/crash.wav" />
-  <audio data-key={82} src="/drums/ride.wav" />
-  <audio data-key={73} src="/drums/hihat-open.wav" />
-  <audio data-key={75} src="/drums/hihat-close.wav" />
-  <audio data-key={77} src="/drums/cowbell.mp3" />
+  <audio data-key={74} src={`${process.env.PUBLIC_URL}/drums/snare.wav`} />
+  <audio data-key={66} src={`${process.env.PUBLIC_URL}/drums/kick.wav`} />
+  <audio data-key={86} src={`${process.env.PUBLIC_URL}/drums/kick.wav`} />
+  <audio data-key={72} src={`${process.env.PUBLIC_URL}/drums/tom-high.wav`} />
+  <audio data-key={71} src={`${process.env.PUBLIC_URL}/drums/tom-mid.wav`} />
+  <audio data-key={70} src={`${process.env.PUBLIC_URL}/drums/tom-low.wav`} />
+  <audio data-key={69} src={`${process.env.PUBLIC_URL}/drums/crash.wav`} />
+  <audio data-key={82} src={`${process.env.PUBLIC_URL}/drums/ride.wav`} />
+  <audio data-key={73} src={`${process.env.PUBLIC_URL}/drums/hihat-open.wav`} />
+  <audio data-key={75} src={`${process.env.PUBLIC_URL}/drums/hihat-close.wav`} />
+  <audio data-key={77} src={`${process.env.PUBLIC_URL}/drums/cowbell.mp3`} />
 
 
     </div>
