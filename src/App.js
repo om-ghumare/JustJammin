@@ -17,8 +17,8 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-        <Route exact path="/" element={<Navigate replace to="/home" />} />
-          <Route path="/home" element={<Home />} />
+        {/* <Route exact path="/" element={<Navigate replace to="/home" />} /> */}
+          <Route exact path="/" element={<Home />} />
           <Route path="/drums" element={<Drums />} />
           <Route path="/piano" element={<Piano />} />
           <Route path="/guitar" element={<Guitar />} />
